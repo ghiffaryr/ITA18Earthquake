@@ -1,0 +1,2 @@
+# Large model artifacts not suitable for regular Git
+models/gpr_model.pkl

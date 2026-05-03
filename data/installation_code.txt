@@ -1,0 +1,5 @@
+B;Buried sensor
+BF;Building floor
+P;Pillar
+PS;Building basement
+T;Directly on the ground
