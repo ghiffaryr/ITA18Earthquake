@@ -1,4 +1,4 @@
-# ITA18 Ground Motion Prediction Model (GMPM) Analysis
+# From Data to Decision: Physics-Constrained Machine Learning for Seismic Risk Assessment in Italy
 
 A comprehensive machine learning analysis project for predicting ground motion in Italian earthquakes using the ITA18 seismic dataset.
 
@@ -9,7 +9,7 @@ This project implements and evaluates multiple machine learning models to predic
 ## Project Structure
 
 ```
-ITA18Earthquake/
+Physics-Constrained-Machine-Learning-for-Seismic-Risk-Assessment-in-Italy/
 ├── data/                          # Dataset and metadata
 │   ├── ITA18_SA_flatfile.csv     # Main earthquake dataset
 │   ├── ec8_code_method.txt       # Eurocode 8 classification codes
@@ -61,54 +61,60 @@ The project uses the **ITA18 earthquake dataset** from the Italian National Inst
 The project follows a structured machine learning pipeline:
 
 ### 1. **Phase 1: Setup & Data Loading**
-   - Environment initialization
-   - Library imports
-   - Data loading and validation
+
+- Environment initialization
+- Library imports
+- Data loading and validation
 
 ### 2. **Phase 2: Data Understanding & EDA**
-   - Statistical summaries
-   - Distribution analysis
-   - Missing value assessment
-   - Correlation analysis
-   - Visualizations saved to `figures/eda/`
+
+- Statistical summaries
+- Distribution analysis
+- Missing value assessment
+- Correlation analysis
+- Visualizations saved to `figures/eda/`
 
 ### 3. **Phase 3: Data Preparation**
-   - Feature engineering
-   - Missing value handling
-   - Data scaling and normalization
-   - Train-test split
+
+- Feature engineering
+- Missing value handling
+- Data scaling and normalization
+- Train-test split
 
 ### 4. **Phase 4: Modeling**
-   - Multiple model implementations:
-     - **XGBoost** - Gradient boosting
-     - **LightGBM** - Light gradient boosting
-     - **CatBoost** - Categorical boosting
-     - **PyTorch Neural Network** - Deep learning
-   - Hyperparameter tuning
-   - Cross-validation
+
+- Multiple model implementations:
+  - **XGBoost** - Gradient boosting
+  - **LightGBM** - Light gradient boosting
+  - **CatBoost** - Categorical boosting
+  - **PyTorch Neural Network** - Deep learning
+- Hyperparameter tuning
+- Cross-validation
 
 ### 5. **Phase 5: Model Evaluation**
-   - Performance metrics (R², RMSE, MAE)
-   - Residual analysis
-   - Feature importance
-   - Prediction error distribution
-   - Model comparison
+
+- Performance metrics (R², RMSE, MAE)
+- Residual analysis
+- Feature importance
+- Prediction error distribution
+- Model comparison
 
 ### 6. **Phase 6: Deployment**
-   - Model serialization
-   - Scalability assessment
-   - Production-ready artifacts
+
+- Model serialization
+- Scalability assessment
+- Production-ready artifacts
 
 ## Models
 
 The project trains and evaluates four different model types:
 
-| Model | File | Type | Framework |
-|-------|------|------|-----------|
-| XGBoost | `xgb_model.json` | Gradient Boosting | XGBoost |
-| LightGBM | `lgbm_model.txt` | Gradient Boosting | LightGBM |
-| CatBoost | `catboost_model.cbm` | Categorical Boosting | CatBoost |
-| Neural Network | `pytorch_model/model.pt` | Deep Learning | PyTorch |
+| Model          | File                     | Type                 | Framework |
+| -------------- | ------------------------ | -------------------- | --------- |
+| XGBoost        | `xgb_model.json`         | Gradient Boosting    | XGBoost   |
+| LightGBM       | `lgbm_model.txt`         | Gradient Boosting    | LightGBM  |
+| CatBoost       | `catboost_model.cbm`     | Categorical Boosting | CatBoost  |
+| Neural Network | `pytorch_model/model.pt` | Deep Learning        | PyTorch   |
 
 ## Key Features
 
@@ -152,7 +158,7 @@ The project trains and evaluates four different model types:
 
 ```bash
 # Clone or download the project
-cd ITA18Earthquake
+cd Physics-Constrained-Machine-Learning-for-Seismic-Risk-Assessment-in-Italy
 
 # Create a virtual environment (recommended)
 python -m venv venv
@@ -177,6 +183,7 @@ jupyter notebook Code.ipynb
 ```
 
 The notebook is organized into logical sections that can be run sequentially:
+
 1. Run setup cells to initialize environment
 2. Execute data loading cells
 3. Run EDA sections to explore data
@@ -209,6 +216,7 @@ The ITA18 dataset is provided by the Italian National Institute of Geophysics an
 ## References
 
 Key earthquake catalogs and databases included:
+
 - **CPTI11**: Parametric Catalogue of Italian Earthquakes
 - **CSI**: Catalogo della sismicità italiana
 - **DISS**: Database of Individual Seismogenic Sources
@@ -250,4 +258,4 @@ Please refer to the data sources and the ITA18 project for licensing information
 
 ---
 
-**Last Updated**: May 3, 2026
+**Last Updated**: August 24, 2026
